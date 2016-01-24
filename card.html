@@ -10,16 +10,16 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <img src="logo.png" width=100 height=50>
+            <img src="logo.png" width="100" height="50" alt="">
           </a>
         </div>
-        <nav>
+        <nav class="mainmenu">
           <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="mainmenu-item"><a href="#">Информация</a></li>
+            <li class="mainmenu-item"><a href="#">Новости</a></li>
+            <li class="mainmenu-item"><a href="#">Прайс-лист</a></li>
+            <li class="mainmenu-item"><a href="#">Магазин</a></li>
+            <li class="mainmenu-item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -29,33 +29,43 @@
     </header>
 
     <main class="container">
-      <h1>
+      <h1 class="cardname">
         Набор для путешествий «BAXTER OF CALIFORNIA»
       </h1>
-      <div class="breadcrumbs">
-        <a href="#">Главная</a>
-        <a href="#">Магазин</a>
-        <a href="#">Средства для ухода</a>
-        <a href="#">Набор для путешествий «BAXTER OF CALIFORNIA»</a>
-      </div>
+      <nav class="cardmenu">
+        <ul>
+          <li class="cardmenu-item"><a href="#">Главная</a></li>
+          <li class="cardmenu-item"><a href="#">Магазин</a></li>
+          <li class="cardmenu-item"><a href="#">Средства для ухода</a></li>
+          <li>Набор для путешествий «BAXTER OF CALIFORNIA»</li>
+      </ul>
+      </nav>
 
-      <div class="card">
-        <img src="rrr.png" alt="">
-        <img src="rrr.png" alt="">
-        <img src="rrr.png" alt="">
-        <img src="rrr.png" alt="">
-      </div>
-
-      <div class="annotation">
-        <div>есть в наличии</div>
-        <div>артикул: DEXTER-AE</div>
-        <p>fsdfsdfsdf sdfsdfsdf sdfsdfsdfsdf
-           dfsdfsdf sdfsdfsdfsdf. dfsdfsdf sdfsdf
-        <div>
-          <span>2900 руб.</span>
-          <a>купить</a>
+      <div class="item-image">
+        <figure class="big-image">
+          <img src="rrr.png" width="400" height="300" alt="">
+        </figure>
+        <div class="item-preview"
+          <a class="item-preview-small" href="#"><img src="rrr.png" width="40" height="30" alt=""></a>
+          <a class="item-preview-small" href="#"><img src="rrr.png" width="40" height="30" alt=""></a>
+          <a class="item-preview-small" href="#"><img src="rrr.png" width="40" height="30" alt=""></a>
         </div>
-        <p>В набор входят:
+      </div>
+
+      <div class="item">
+        <div class="item-info">
+          <div class="item-info-status">есть в наличии</div>
+          <div class="item-info-artikul">артикул: DEXTER-AE</div>
+        </div>
+        <p class="item-annotation">
+          Travel Kit - Необходимый аксессуар во время любого путешествия.
+          В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь.
+          Набор также может стать отличным подарком.
+        <div class="item-sale">
+          <span class="item-sale-price">2900 руб.</span>
+          <a class="item-sale-buy" href="#">купить</a>
+        </div>
+        <h2>В набор входят:
         <ul>
           <li>средство для умывания (50мл)</li>
           <li>увлажняющий крем (50мл)</li>
@@ -67,23 +77,23 @@
 
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <div class="container">
         <section class="contact">
           Барбершоп «Бородинский»<br>
           Адрес: г.Санкт-Петербург, УЛ. Б.Конюшенная, Д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
+          <a class="map-address" href="#">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </section>
         <section class="social">
-          <p>Давайте дружить!</p>
-          <a href="#">Вконтакте</a>
-          <a href="#">Фейсбук</a>
-          <a href="#">Инстаграм</a>
+          <p class="social-header">Давайте дружить!</p>
+          <a class="social-vk" href="#">Вконтакте</a>
+          <a class="social-fb" href="#">Фейсбук</a>
+          <a class="social-ig" href="#">Инстаграм</a>
         </section>
-        <section class="copyraight">
-          <p>Разработано:</p>
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+        <section class="copyright">
+          <p class="copyright-header">Разработано:</p>
+          <a class="copyright-href" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </footer>
