@@ -10,7 +10,7 @@
       <div class="container">
         <div class="logo">
           <a href="#">
-            <img src="logo.png" width=100 height=50>
+            <img src="logo.png" width="100" height="50" alt="">
           </a>
         </div>
         <nav class="mainmenu">
@@ -32,63 +32,63 @@
       <h1>
         Средства для ухода
       </h1>
-      <div class="breadcrumbs">
-        <a href="#">Главная</a>
-        <a href="#">Магазин</a>
-        <a href="#">Средства для ухода</a>
-      </div>
+      <ul class="card-menu">
+        <li class="card-menu-item"><a href="#">Главная</a></li>
+        <li class="card-menu-item"><a href="#">Магазин</a></li>
+        <li class="card-menu-item">Средства для ухода</li>
+      </ul>
 
       <div class="content">
-        <form action="search.php" method="post">
-          <fieldset class="form-fields">
-            <div class="vendors">Производители:</div>
-            <div class="form-check">
-              <label class="form-check-item" for="check-item1">BAXTER OF CALIFORNIA</label>
-              <input id="check-item1" type="checkbox">
+        <aside class="left-column">
+          <form action="search.php" method="post">
+            <fieldset class="form-fields">
+              <div class="form-filter">Производители:</div>
+              <div class="form-check">
+                <label class="form-check-item" for="check-item1">BAXTER OF CALIFORNIA</label>
+                <input id="check-item1" type="checkbox">
 
-              <label class="form-check-item" for="check-item2">MR NATTY</label>
-              <input id="check-item2" type="checkbox">
+                <label class="form-check-item" for="check-item2">MR NATTY</label>
+                <input id="check-item2" type="checkbox">
 
-              <label class="form-check-item" for="check-item3">SUAVECITO</label>
-              <input id="check-item3" type="checkbox">
+                <label class="form-check-item" for="check-item3">SUAVECITO</label>
+                <input id="check-item3" type="checkbox">
 
-              <label class="form-check-item" for="check-item4">MALIN+GOETZ</label>
-              <input id="check-item4" type="checkbox">
+                <label class="form-check-item" for="check-item4">MALIN+GOETZ</label>
+                <input id="check-item4" type="checkbox">
 
-              <label class="form-check-item" for="check-item5">MURRAY'S</label>
-              <input id="check-item5" type="checkbox">
+                <label class="form-check-item" for="check-item5">MURRAY'S</label>
+                <input id="check-item5" type="checkbox">
 
-              <label class="form-check-item" for="check-item6">AMERICAN CREW</label>
-              <input id="check-item6" type="checkbox">
+                <label class="form-check-item" for="check-item6">AMERICAN CREW</label>
+                <input id="check-item6" type="checkbox">
+              </div>
 
-            </div>
+              <div class="form-filter">Группы товаров:</div>
+              <div class="form-radio">
+                <label class="form-radio-item" for="radio-item1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+                <input id="radio-item1" name="radio-item" type="radio">
 
-            <div class="groups">Группы товаров:</div>
-            <div class="form-radio">
-              <label class="form-radio-item" for="radio-item1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
-              <input id="radio-item1" name="radio-item" type="radio">
+                <label class="form-radio-item" for="radio-item2">СРЕДСТВА ДЛЯ УХОДА</label>
+                <input id="radio-item2" name="radio-item" type="radio">
 
-              <label class="form-radio-item" for="radio-item2">СРЕДСТВА ДЛЯ УХОДА</label>
-              <input id="radio-item2" name="radio-item" type="radio">
-
-              <label class="form-radio-item" for="radio-item3">АКСЕССУАРЫ</label>
-              <input id="radio-item3" name="radio-item" type="radio">
-
-            </div>
-            <input class="form-btn" type="submit" value="Показать">
-          </fieldset>
-        </form>
+                <label class="form-radio-item" for="radio-item3">АКСЕССУАРЫ</label>
+                <input id="radio-item3" name="radio-item" type="radio">
+              </div>
+              <input class="form-btn" type="submit" value="Показать">
+            </fieldset>
+          </form>
+        </aside>
 
         <section class="right-column">
           <article class="item">
+            <a class="item-image" href="#"><img src="rrr.png" width="100" height="150" alt=""></a>
             <div class="item-content">
-              <a class="item-content-image" href="#"><img src="rrr.png" width="100" height="150" alt=""></a>
               <a class="item-content-name" href="#">
                 Набор для путешествий
                 <span class="item-content-brand">«BAXTER OF CALIFORNIA»</span>
               </a>
               <div class="item-content-sale">
-                <span class="item-content-price">2900 руб.</span>
+                <div class="item-content-price">2900 руб.</div>
                 <a class="item-content-buy" href="#">купить</a>
               </div>
             </div>
@@ -164,14 +164,12 @@
             </div>
           </article>
 
-          <div class="paginator">
-            <ul>
-              <li class="paginator-item"><a href="#">1</a></li>
-              <li class="paginator-item">2</li>
-              <li class="paginator-item"><a href="#">3</a></li>
-              <li class="paginator-item"><a href="#">4</a></li>
-            </ul>
-          </div>
+          <ul class="paginator">
+            <li class="paginator-item"><a href="#">1</a></li>
+            <li class="paginator-item">2</li>
+            <li class="paginator-item"><a href="#">3</a></li>
+            <li class="paginator-item"><a href="#">4</a></li>
+          </ul>
         </section>
       </div>
     </main>
