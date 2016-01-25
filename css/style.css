@@ -1,0 +1,22 @@
+body {
+  color: #000000;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-menu {
+  font-size: 16px;
+}
+
+.card-menu-active {
+  color: #aba9a7;
+}
+
+.group-name {
+  font-size: 30px;
+}
+
+.item-content-name {
+  line-height: 18px;
+}
