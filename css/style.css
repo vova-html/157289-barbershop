@@ -86,6 +86,16 @@ a {
   color: #ffffff;
 }
 
+.main-menu .menu-active {
+  padding-bottom: 20px;
+  border-bottom: 5px solid #ffffff;
+}
+
+.menu-active:hover {
+  padding-bottom: 25px;
+  border-bottom: none;
+}
+
 .main-menu a:hover {
   background: #242424;
 }
@@ -104,7 +114,6 @@ a {
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
-  background-color: #ccc;
 }
 
 .user-block a {
@@ -131,7 +140,11 @@ a {
   left: 20px;
   width: 18px;
   height: 18px;
-  background: #ff0000;
+  background: transparent url("../img/sprite.png") -12px -143px no-repeat;
+}
+
+.login:hover::before {
+  background: transparent url("../img/sprite.png") -55px -143px no-repeat;
 }
 
 .index-logo {
@@ -384,10 +397,10 @@ a {
 .form-fields input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  left: 6px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
   background-color: #000000;
   border-radius: 50%;
 }
@@ -431,6 +444,7 @@ a {
   outline: 1px dotted blue;
   font-size: 14px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
 }
 
 .item:nth-child(3n+2) {
@@ -509,8 +523,10 @@ a {
 
 .big-image {
   width: 460px;
+  height: 498px;
   margin: 0;
   margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
 }
 
 .big-image img,
@@ -544,6 +560,7 @@ a {
 .item-annotation {
   float: left;
   padding: 40px 10px 40px 0;
+  line-height: 24px;
 }
 
 .item-sale {
@@ -616,7 +633,6 @@ a {
   width: 180px;
   margin-left: 60px;
   outline: 1px solid blue;
-  background-color: #bbb;
 }
 
 .footer-social p {
@@ -637,7 +653,38 @@ a {
   text-decoration: none;
   vertical-align: top;
   font-size: 0;
-  background-color: #eee;
+  background-color: transparent;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  transition: background-position 0.2s linear,
+              background-color 1s;
+}
+
+.social-btn-vk {
+  background-position: 0 0;
+}
+
+.social-btn-vk:hover {
+  background-color: #ffffff;
+  background-position: -43px 0;
+}
+
+.social-btn-fb {
+  background-position: 0 -43px;
+}
+
+.social-btn-fb:hover {
+  background-color: #ffffff;
+  background-position: -43px -43px;
+}
+
+.social-btn-inst {
+  background-position: 0 -86px;
+}
+
+.social-btn-inst:hover {
+  background-color: #ffffff;
+  background-position: -43px -86px;
 }
 
 .footer-copyright {
@@ -654,4 +701,5 @@ a {
 .footer-copyright .btn:hover {
   color: #000000;
   background-color: #ffffff;
+  transition: background-color 1s;
 }
