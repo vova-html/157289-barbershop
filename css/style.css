@@ -1,5 +1,6 @@
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -11,6 +12,7 @@ body {
 
 .bg-main {
   background: url("../img/bg_main.jpg") center top no-repeat #000000;
+  background-size: auto;
 }
 a {
   text-decoration: none;
@@ -146,6 +148,7 @@ a {
   position: relative;
   display: inline-block;
   padding: 25px 20px;
+  padding-bottom: 27px;
   padding-left: 50px;
   vertical-align: top;
 }
@@ -181,8 +184,8 @@ a {
 
 .features-item {
   float: left;
-  width: 280px;
-  padding: 0 10px;
+  width: 290px;
+  padding: 0 5px;
 }
 
 .features-item:nth-child(2) {
@@ -192,6 +195,7 @@ a {
 .features-item p {
   margin: 0;
   font-size: 14px;
+  font-weight: bold;
   line-height: 24px;
 }
 
@@ -222,10 +226,8 @@ a {
   padding-top: 45px;
   padding-bottom: 55px;
   color: #000000;
-  background-color: #f8f5f2;
-  background-image: url("../img/news_vr.png");
-  background-position: 465px center;
-  background-repeat: no-repeat;
+  background: url("../img/news_vr.png") 465px center no-repeat,
+      url("../img/bg_pattern.jpg") 0 0 repeat #f8f5f2;
 }
 
 .content.index-content:last-child {
@@ -346,6 +348,7 @@ a {
   padding-top: 50px;
   padding-bottom: 48px;
   background-color: #f8f5f2;
+  background: url("../img/bg_pattern.jpg") #f8f5f2;
 }
 
 .catalog.card {
@@ -413,6 +416,10 @@ a {
 
 .catalog-menu-item a {
   color: #000000;
+}
+
+.catalog-menu-item a:hover {
+  text-decoration: underline;
 }
 
 .left-column {
@@ -526,7 +533,8 @@ a {
 }
 
 .item:hover {
-  box-shadow: 5px 0 30px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 25px 0 rgba(0,0,0,0.2),
+      5px 5px 25px 0 rgba(0,0,0,0.1);
 }
 
 .item:nth-child(3n+2) {
@@ -738,7 +746,7 @@ a {
 }
 
 .footer-contacts a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer-social {
@@ -812,4 +820,40 @@ a {
   color: #000000;
   background-color: #ffffff;
   transition: all 1s;
+}
+
+.modal-content-map {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 767px;
+  height: 561px;
+  padding: 6.5px;
+  background: url("../img/bg_map.jpg") center center no-repeat #ffffff;
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.75);
+  transform: translate(-50%, -50%);
+}
+
+.modal-content-show {
+  display: block;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 3px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  outline-style: none;
+  font-size: 0;
+  background: url("../img/map_close.png") center center no-repeat transparent;
+  cursor: pointer;
+}
+
+.modal-content-close:hover {
+  border-radius: 6px;
+  background-color: #5f84f2;
 }
